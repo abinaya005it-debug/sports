@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">⚽</div>
+            <div>
+                <h1>SportsBot</h1>
+                <p>Ask me anything about sports</p>
+            </div>
+        </header>
+
+        <main id="chatBox">
+            <div class="message bot">
+                <strong>SportsBot</strong>
+                <p>Hello! Ask me a sports-related question.</p>
+            </div>
+        </main>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask a sports question..."
+                autocomplete="off"
+            >
+            <button id="sendButton">Send</button>
+        </div>
+
+        <p class="note">Sports questions only</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
